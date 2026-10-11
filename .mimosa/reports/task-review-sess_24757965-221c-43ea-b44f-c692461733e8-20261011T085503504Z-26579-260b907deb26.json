@@ -1,0 +1,525 @@
+{
+  "schema_version": "mimosa-task-review/v2",
+  "run_id": "20261011T085503504Z-26579-260b907deb26",
+  "run_status": "completed",
+  "errors": [],
+  "coverage": {
+    "schema_version": "mimosa-hook-coverage/v1",
+    "status": "complete",
+    "scope": "hook_observed_diff",
+    "baseline": {
+      "complete": false,
+      "captured_files": 11,
+      "candidate_limit": 5000,
+      "truncated": false,
+      "enumeration_error_count": 0,
+      "snapshot_error_count": 0,
+      "compensated_target_count": 11
+    },
+    "change_tracking": {
+      "touched_observed": 11,
+      "touched_retained": 11,
+      "truncated": false,
+      "bash_mutation": false,
+      "bash_discovered": 0,
+      "bash_discovery_limit": 80,
+      "bash_discovery_truncated": false
+    },
+    "candidates": {
+      "eligible_files": 11,
+      "selected_files": 11,
+      "limit": 20,
+      "truncated": false
+    },
+    "scanning": {
+      "required_files": 11,
+      "scanned_files": 11,
+      "skipped_files": 0,
+      "failed_files": 0,
+      "project_checks_required": 0,
+      "project_checks_completed": 0
+    },
+    "notification": {
+      "eligible_findings": 2,
+      "detailed_findings": 0,
+      "detail_limit": 3,
+      "truncated": true
+    },
+    "reason_counts": {
+      "baseline_partial": 1
+    },
+    "reasons": [
+      {
+        "code": "baseline_partial",
+        "stage": "baseline",
+        "target": ".",
+        "detail": "baseline capture had enumeration or snapshot errors",
+        "affects_completion": false
+      }
+    ],
+    "reasons_truncated": false
+  },
+  "generated_at": "2026-10-11T08:55:03.504Z",
+  "session_id": "sess_24757965-221c-43ea-b44f-c692461733e8",
+  "target": ".",
+  "revision": null,
+  "rules_version": "unavailable",
+  "diff_hash": "26593217240fe4c31fc8979f2cc29e7a8dabd71e140e4091628b3af19d601d31",
+  "diff": {
+    "algorithm": "sha256",
+    "changed_file_count": 11,
+    "changed_files": [
+      {
+        "file": "scripts/terrain-profile.ts",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 25
+          }
+        ],
+        "before_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "after_hash": "867240cd588a7d70b1545adbfee0c4f3c033ab2a7e1aa2f75c7808ff51cc9438"
+      },
+      {
+        "file": "src/App.tsx",
+        "ranges": [
+          {
+            "start": 2,
+            "end": 3
+          },
+          {
+            "start": 10,
+            "end": 25
+          },
+          {
+            "start": 34,
+            "end": 34
+          },
+          {
+            "start": 41,
+            "end": 41
+          },
+          {
+            "start": 43,
+            "end": 43
+          }
+        ],
+        "before_hash": "cd45d64e50a5b78f8879c864a53889c86e6487824f7e2cf0544b1d2d2cd4a93d",
+        "after_hash": "8d03456188c6a148113849713650ac99e6cdd0639180592e34a5d0ce7dd239d9"
+      },
+      {
+        "file": "src/lib/terrain.ts",
+        "ranges": [
+          {
+            "start": 9,
+            "end": 10
+          },
+          {
+            "start": 13,
+            "end": 13
+          },
+          {
+            "start": 38,
+            "end": 38
+          },
+          {
+            "start": 45,
+            "end": 45
+          },
+          {
+            "start": 47,
+            "end": 47
+          },
+          {
+            "start": 63,
+            "end": 69
+          },
+          {
+            "start": 83,
+            "end": 83
+          },
+          {
+            "start": 88,
+            "end": 88
+          },
+          {
+            "start": 94,
+            "end": 94
+          },
+          {
+            "start": 104,
+            "end": 110
+          }
+        ],
+        "before_hash": "7ff0c96f73868401e2ea7e04d34508f509c5669307b88ad4321faec9213bb603",
+        "after_hash": "0707dba76a8460786e6cdb3136ed3e42b26b99eb403b61d467dcb9c2c9b135b0"
+      },
+      {
+        "file": "src/lib/waterSim.ts",
+        "ranges": [
+          {
+            "start": 146,
+            "end": 148
+          },
+          {
+            "start": 171,
+            "end": 171
+          }
+        ],
+        "before_hash": "b1454b3867b89f01bcc3ad8261c1d81cd072bb9bf68a79b18d0bfa4095fb5a91",
+        "after_hash": "d4db81737156b170b7ee77c9ba069c691e76590af60d620fd852de3f807b9337"
+      },
+      {
+        "file": "src/main.tsx",
+        "ranges": [
+          {
+            "start": 14,
+            "end": 33
+          }
+        ],
+        "before_hash": "44174c40b0f8a4c89d8b03bece15cece5b3b54fb5fbeca02df5a89caa8c176df",
+        "after_hash": "445ef178d888a94d3d7d9ac59a33b258f066f8ddfb0452559f8bf28784e91f17"
+      },
+      {
+        "file": "src/scene/Effects.tsx",
+        "ranges": [
+          {
+            "start": 17,
+            "end": 17
+          }
+        ],
+        "before_hash": "35b8ae455e9acaedf8f1ab58cea0cf5b38f3eed3400b6c7e60a2c38462d1617c",
+        "after_hash": "31d33eeeb6c3dda31b4d5b4b3363284f48c57b7eb186d09a48d4f46665d96d86"
+      },
+      {
+        "file": "src/scene/Experience.tsx",
+        "ranges": [
+          {
+            "start": 49,
+            "end": 49
+          },
+          {
+            "start": 52,
+            "end": 52
+          },
+          {
+            "start": 58,
+            "end": 58
+          }
+        ],
+        "before_hash": "a5a6b92620e200ee7ac85c9c56d76c7976a8352ea1b0a5a629003ae4b972a646",
+        "after_hash": "60f509ca16628df68c671cfe3d26da66a5b7e66d900eaf00c50555e6f1c5451f"
+      },
+      {
+        "file": "src/scene/ResinBlock.tsx",
+        "ranges": [
+          {
+            "start": 17,
+            "end": 17
+          },
+          {
+            "start": 28,
+            "end": 28
+          }
+        ],
+        "before_hash": "5ad406f55e6f3f3b921ae0cce33fe3c254b5521ad705e1b2f9e8d3db8a9d967e",
+        "after_hash": "4e5e4081da2aacc9f8db98335acee725d014f350edfb4679a4b78121bfa8f241"
+      },
+      {
+        "file": "src/scene/Rocks.tsx",
+        "ranges": [
+          {
+            "start": 66,
+            "end": 66
+          }
+        ],
+        "before_hash": "3ec30936634b53ef570cd7ba91fbba6b5c00e024255089c9d31c349a777d87f1",
+        "after_hash": "9c4ed9805f099c5d5be679c1e12820fcbb703431fbc8b5ea6315f97dcd7ef738"
+      },
+      {
+        "file": "src/scene/WaterSurface.tsx",
+        "ranges": [
+          {
+            "start": 27,
+            "end": 29
+          },
+          {
+            "start": 33,
+            "end": 33
+          },
+          {
+            "start": 39,
+            "end": 40
+          },
+          {
+            "start": 51,
+            "end": 51
+          },
+          {
+            "start": 59,
+            "end": 61
+          },
+          {
+            "start": 90,
+            "end": 90
+          },
+          {
+            "start": 92,
+            "end": 93
+          },
+          {
+            "start": 105,
+            "end": 107
+          },
+          {
+            "start": 117,
+            "end": 117
+          },
+          {
+            "start": 126,
+            "end": 130
+          },
+          {
+            "start": 160,
+            "end": 171
+          },
+          {
+            "start": 192,
+            "end": 192
+          },
+          {
+            "start": 194,
+            "end": 194
+          },
+          {
+            "start": 199,
+            "end": 199
+          },
+          {
+            "start": 217,
+            "end": 217
+          },
+          {
+            "start": 223,
+            "end": 223
+          },
+          {
+            "start": 234,
+            "end": 234
+          },
+          {
+            "start": 239,
+            "end": 244
+          },
+          {
+            "start": 252,
+            "end": 253
+          }
+        ],
+        "before_hash": "26d2c790113f559fb50795d426803c1d19262f95f6b3c8639bf0ba7098bb52d6",
+        "after_hash": "1104cc5dd0353694d085fe760595c874de140523a2e69372e7159faa11e31e1a"
+      },
+      {
+        "file": "src/state/params.ts",
+        "ranges": [
+          {
+            "start": 8,
+            "end": 10
+          },
+          {
+            "start": 12,
+            "end": 13
+          },
+          {
+            "start": 23,
+            "end": 24
+          },
+          {
+            "start": 44,
+            "end": 44
+          }
+        ],
+        "before_hash": "98cb2c986cc18986d465a7935a2e4399064cdaaeabf5c6977e832927eac237b5",
+        "after_hash": "02c8837d22e9e17dafd321c142a024272e90e82cf276ebc505a4b86a245de1aa"
+      }
+    ]
+  },
+  "timing": {
+    "started_at": "2026-10-11T08:55:02.776Z",
+    "completed_at": "2026-10-11T08:55:03.504Z",
+    "duration_ms": 728,
+    "measurement": "hook_wall_clock"
+  },
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "total": 0,
+    "model_calls": 0,
+    "measurement": "known-zero"
+  },
+  "telemetry": {
+    "schemaVersion": "mimosa-gate-telemetry/v1",
+    "profile": "gate",
+    "operation": "Stop",
+    "outcome": "complete",
+    "latencyMs": 728,
+    "peakMemoryBytes": 189399040,
+    "memoryMeasurement": "max-observed-process-rss",
+    "scannedFiles": 11,
+    "cache": {
+      "hits": 0,
+      "misses": 0,
+      "measurement": "not-applicable"
+    },
+    "denyCount": 0,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "total": 0,
+      "modelCalls": 0,
+      "measurement": "known-zero"
+    }
+  },
+  "finding_count": 2,
+  "rewake_finding_count": 0,
+  "evidence_boundary": {
+    "scan": "candidate",
+    "static_fix_verification": "observed_static_only",
+    "runtime_verification": "not_performed"
+  },
+  "finding_events": [
+    {
+      "finding_id": "mimosa-ed8d850d7d550f969019694b",
+      "file": "src/scene/WaterSurface.tsx",
+      "line": 2,
+      "rule_id": "security",
+      "severity": "high",
+      "category": "弱随机数",
+      "status": "candidate",
+      "decision": "advisory",
+      "at": "2026-10-11T07:30:56.045Z",
+      "evidence": {
+        "kind": "source",
+        "boundary": "candidate",
+        "producer": "deterministic",
+        "source": "semgrep",
+        "evidence_hash": "217f7787810b968a41d52062a3d8fdd4810ae97284b74aa2be2b465d3c0efb99",
+        "runtime_oracle": false
+      }
+    },
+    {
+      "finding_id": "mimosa-7ed8149a971d33aa4b302113",
+      "file": "src/scene/WaterSurface.tsx",
+      "line": 3,
+      "rule_id": "security",
+      "severity": "high",
+      "category": "弱随机数",
+      "status": "candidate",
+      "decision": "advisory",
+      "at": "2026-10-11T07:30:56.045Z",
+      "evidence": {
+        "kind": "source",
+        "boundary": "candidate",
+        "producer": "deterministic",
+        "source": "semgrep",
+        "evidence_hash": "e0f12b497e2e16117cc1845664e0e99c638cc177c9d9b3642ad3bf1e58a1bf80",
+        "runtime_oracle": false
+      }
+    },
+    {
+      "finding_id": "mimosa-ed8d850d7d550f969019694b",
+      "file": "src/scene/WaterSurface.tsx",
+      "line": 252,
+      "severity": "high",
+      "category": "弱随机数",
+      "status": "candidate",
+      "decision": "observe",
+      "at": "2026-10-11T08:55:03.504Z",
+      "evidence": {
+        "kind": "static_scan",
+        "boundary": "candidate",
+        "producer": "deterministic",
+        "source": "semgrep",
+        "evidence_hash": "217f7787810b968a41d52062a3d8fdd4810ae97284b74aa2be2b465d3c0efb99",
+        "runtime_oracle": false
+      }
+    },
+    {
+      "finding_id": "mimosa-7ed8149a971d33aa4b302113",
+      "file": "src/scene/WaterSurface.tsx",
+      "line": 253,
+      "severity": "high",
+      "category": "弱随机数",
+      "status": "candidate",
+      "decision": "observe",
+      "at": "2026-10-11T08:55:03.504Z",
+      "evidence": {
+        "kind": "static_scan",
+        "boundary": "candidate",
+        "producer": "deterministic",
+        "source": "semgrep",
+        "evidence_hash": "e0f12b497e2e16117cc1845664e0e99c638cc177c9d9b3642ad3bf1e58a1bf80",
+        "runtime_oracle": false
+      }
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "mimosa-ed8d850d7d550f969019694b",
+      "file": "src/scene/WaterSurface.tsx",
+      "line": 252,
+      "end_line": 252,
+      "severity": "high",
+      "category": "弱随机数",
+      "kind": "semgrep",
+      "advisory": true,
+      "status": "candidate",
+      "evidence_boundary": "candidate",
+      "evidence": [
+        {
+          "kind": "static_scan",
+          "boundary": "candidate",
+          "producer": "deterministic",
+          "source": "semgrep",
+          "file": "src/scene/WaterSurface.tsx",
+          "line": 252,
+          "evidence_hash": "217f7787810b968a41d52062a3d8fdd4810ae97284b74aa2be2b465d3c0efb99",
+          "runtime_oracle": false
+        }
+      ],
+      "already_reported_to_agent": false,
+      "selected_for_rewake": false
+    },
+    {
+      "finding_id": "mimosa-7ed8149a971d33aa4b302113",
+      "file": "src/scene/WaterSurface.tsx",
+      "line": 253,
+      "end_line": 253,
+      "severity": "high",
+      "category": "弱随机数",
+      "kind": "semgrep",
+      "advisory": true,
+      "status": "candidate",
+      "evidence_boundary": "candidate",
+      "evidence": [
+        {
+          "kind": "static_scan",
+          "boundary": "candidate",
+          "producer": "deterministic",
+          "source": "semgrep",
+          "file": "src/scene/WaterSurface.tsx",
+          "line": 253,
+          "evidence_hash": "e0f12b497e2e16117cc1845664e0e99c638cc177c9d9b3642ad3bf1e58a1bf80",
+          "runtime_oracle": false
+        }
+      ],
+      "already_reported_to_agent": false,
+      "selected_for_rewake": false
+    }
+  ],
+  "artifacts": {
+    "immutable_report": ".mimosa/reports/task-review-sess_24757965-221c-43ea-b44f-c692461733e8-20261011T085503504Z-26579-260b907deb26.json",
+    "latest_report": ".mimosa/reports/task-review-sess_24757965-221c-43ea-b44f-c692461733e8.json",
+    "history_summary": ".mimosa/history/run-20261011T085503504Z-26579-260b907deb26.json"
+  }
+}

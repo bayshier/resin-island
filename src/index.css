@@ -1,0 +1,50 @@
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background: #f3eee2;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Segoe UI',
+    'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-root {
+  position: fixed;
+  inset: 0;
+}
+
+.app-root canvas {
+  display: block;
+  touch-action: none;
+}
+
+.hint {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(38, 34, 28, 0.5);
+  color: #f6f2e8;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  pointer-events: none;
+  user-select: none;
+  backdrop-filter: blur(8px);
+}
+
+/* drei Loader 微调：更贴合米白背景 */
+.loader-container .loader {
+  filter: grayscale(0.4) sepia(0.15);
+}

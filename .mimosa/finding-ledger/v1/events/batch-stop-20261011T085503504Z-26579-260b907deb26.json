@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "mimosa-finding-ledger-batch/v1",
+  "batchId": "stop-20261011T085503504Z-26579-260b907deb26",
+  "runId": "20261011T085503504Z-26579-260b907deb26",
+  "runStatus": "completed",
+  "coverage": {
+    "status": "complete",
+    "reasons": [
+      {
+        "code": "baseline_partial",
+        "stage": "baseline",
+        "target": ".",
+        "detail": "baseline capture had enumeration or snapshot errors",
+        "affectsCompletion": false
+      }
+    ]
+  },
+  "source": {
+    "component": "zcode-hook",
+    "operationId": "Stop"
+  },
+  "revision": null,
+  "diffHash": "26593217240fe4c31fc8979f2cc29e7a8dabd71e140e4091628b3af19d601d31",
+  "rulesVersion": "unavailable",
+  "sessionHash": "2b89154fa54ac84c9e1c7d2272c0670201f92a8018fdf7721edbf7732d3e55e5",
+  "reportRef": ".mimosa/reports/task-review-sess_24757965-221c-43ea-b44f-c692461733e8-20261011T085503504Z-26579-260b907deb26.json",
+  "events": [
+    {
+      "eventId": "hook-d55cec59364e5ce51494846b1cfb11d6",
+      "findingId": "mimosa-ed8d850d7d550f969019694b",
+      "type": "finding_observed",
+      "at": "2026-10-11T07:30:56.045Z",
+      "identity": {
+        "projectRelativeFile": "src/scene/WaterSurface.tsx",
+        "ruleId": "security",
+        "codeEvidenceHash": "217f7787810b968a41d52062a3d8fdd4810ae97284b74aa2be2b465d3c0efb99",
+        "confidence": "stable"
+      },
+      "scope": "direct",
+      "line": 2,
+      "endLine": 2,
+      "reasonCode": "advisory",
+      "reportedToAgent": true,
+      "evidence": {
+        "kind": "source",
+        "boundary": "candidate",
+        "producer": "deterministic",
+        "evidenceHash": "217f7787810b968a41d52062a3d8fdd4810ae97284b74aa2be2b465d3c0efb99"
+      },
+      "sequence": 0
+    },
+    {
+      "eventId": "hook-95e0b126e4573c4b68c83efa979916a3",
+      "findingId": "mimosa-7ed8149a971d33aa4b302113",
+      "type": "finding_observed",
+      "at": "2026-10-11T07:30:56.045Z",
+      "identity": {
+        "projectRelativeFile": "src/scene/WaterSurface.tsx",
+        "ruleId": "security",
+        "codeEvidenceHash": "e0f12b497e2e16117cc1845664e0e99c638cc177c9d9b3642ad3bf1e58a1bf80",
+        "confidence": "stable"
+      },
+      "scope": "direct",
+      "line": 3,
+      "endLine": 3,
+      "reasonCode": "advisory",
+      "reportedToAgent": true,
+      "evidence": {
+        "kind": "source",
+        "boundary": "candidate",
+        "producer": "deterministic",
+        "evidenceHash": "e0f12b497e2e16117cc1845664e0e99c638cc177c9d9b3642ad3bf1e58a1bf80"
+      },
+      "sequence": 1
+    },
+    {
+      "eventId": "hook-079050620c988a3686e34aa71fc1a660",
+      "findingId": "mimosa-ed8d850d7d550f969019694b",
+      "type": "finding_observed",
+      "at": "2026-10-11T08:55:03.504Z",
+      "identity": {
+        "projectRelativeFile": "src/scene/WaterSurface.tsx",
+        "ruleId": "security",
+        "codeEvidenceHash": "217f7787810b968a41d52062a3d8fdd4810ae97284b74aa2be2b465d3c0efb99",
+        "confidence": "stable"
+      },
+      "scope": "direct",
+      "line": 252,
+      "endLine": 252,
+      "reasonCode": "observe",
+      "reportedToAgent": false,
+      "evidence": {
+        "kind": "source",
+        "boundary": "candidate",
+        "producer": "deterministic",
+        "evidenceHash": "217f7787810b968a41d52062a3d8fdd4810ae97284b74aa2be2b465d3c0efb99"
+      },
+      "sequence": 2
+    },
+    {
+      "eventId": "hook-5a7a8b85974f523e023410f522460cef",
+      "findingId": "mimosa-7ed8149a971d33aa4b302113",
+      "type": "finding_observed",
+      "at": "2026-10-11T08:55:03.504Z",
+      "identity": {
+        "projectRelativeFile": "src/scene/WaterSurface.tsx",
+        "ruleId": "security",
+        "codeEvidenceHash": "e0f12b497e2e16117cc1845664e0e99c638cc177c9d9b3642ad3bf1e58a1bf80",
+        "confidence": "stable"
+      },
+      "scope": "direct",
+      "line": 253,
+      "endLine": 253,
+      "reasonCode": "observe",
+      "reportedToAgent": false,
+      "evidence": {
+        "kind": "source",
+        "boundary": "candidate",
+        "producer": "deterministic",
+        "evidenceHash": "e0f12b497e2e16117cc1845664e0e99c638cc177c9d9b3642ad3bf1e58a1bf80"
+      },
+      "sequence": 3
+    }
+  ],
+  "observedFindingIds": [
+    "mimosa-ed8d850d7d550f969019694b",
+    "mimosa-7ed8149a971d33aa4b302113",
+    "mimosa-688f29a4970b43de26659270"
+  ],
+  "verifiedFiles": [
+    {
+      "file": "src/scene/Rocks.tsx",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "src/App.tsx",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "src/state/params.ts",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "src/scene/ResinBlock.tsx",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "scripts/terrain-profile.ts",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "src/lib/terrain.ts",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "src/main.tsx",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "src/scene/WaterSurface.tsx",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "src/scene/Experience.tsx",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "src/scene/Effects.tsx",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "src/lib/waterSim.ts",
+      "direct": "complete",
+      "projectContext": "partial"
+    }
+  ],
+  "recordedAt": "2026-10-11T08:55:03.767Z"
+}
